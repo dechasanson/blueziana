@@ -4,9 +4,17 @@ import React from 'react';
 
 import ReactDOM from 'react-dom';
 
+const App = () => {
+	return (
+		<>
+			<h1>Welcome to the Blueziana</h1>
+		</>
+	);
+};
+
 //here we can write straight HTML into the javascript
 ReactDOM.render(
-    <h1>Hello, World!</h1>, 
+    <App />, 
     document.getElementById("app") //using "app" because this is the div we created in the html file where we want the application to begin
 );
 
