@@ -1,5 +1,3 @@
-# React Boilerplate
+The Blueziana Club
 
-Hey, welcome to React.
-
-Run `npm install` first, then `npm run start`.
+This is a very basic site I built for my dad's home bar.  Enjoy - more features to come.
