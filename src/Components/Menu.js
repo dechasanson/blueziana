@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Menu = () => {
-	const { activeTab, setActiveTab } = useState("bourbon");
 
 	function openLiquor(liquorName) {
 		// Declare all variables
@@ -29,7 +28,7 @@ const Menu = () => {
 
 	return (
 		<>
-			<main className="container" id="menu">
+			<main className="main" >
 				<div className="title menuTitle">
             <h1 className="title">Pick Your Poison</h1>
 				</div>
