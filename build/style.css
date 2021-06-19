@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Playfair Display', serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+button:hover {
+  opacity: .6;
+}
+
+/* Styles for the hero image */
+.hero {
+  /* Photo by mnm.all on Unsplash */
+  background: url('https://res.cloudinary.com/doe9bf93k/image/upload/v1623110174/IMG_0284_2_ncesfd.jpg') center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+  background-attachment: fixed;
+  padding: 4rem 2rem;
+  min-height: 800px;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  background-color: black;
+}
+
+.hero > * {
+  color: white;
+}
+
+.hero > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.hero > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.hero > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* Menu Styling */
+
+.container, #menu {
+  background-color: white;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: center;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  color: black;
+}
+
+.tabcontent > h2 {
+  padding: 1em 0 1em 0;
+}
+
+.drinkItem {
+  padding-bottom: 25px;
+}
+
+.active {
+  display: block;
+}
+
+.menuTitle {
+  background: url('https://res.cloudinary.com/doe9bf93k/image/upload/v1623629686/bottles_1_yd2rim.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.sights {
+  background: url("https://res.cloudinary.com/doe9bf93k/image/upload/v1623719761/Domino_banner_idaajx.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  text-align: center;
+  color: white;
+}
+
+.about {
+  background: url("https://res.cloudinary.com/doe9bf93k/image/upload/v1624127015/Blueziana%20Sights/New_Banner_jjnuqb.png") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  min-height: 300px;
+}
+
+#mapDiv > * {
+  margin: 1em !important;
+  max-width: 900px;
+  margin: auto !important;
+}
+
+#about {
+  padding-bottom: 0px;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.sights {
+  color: white;
+  text-align: center;
+}
+
+.main {
+  background-color: #ddd;
+}
+
+.banner {
+  padding: 20px;
+  background-color: #ddd;
+  margin-bottom: 1em;
+}
+
+.intro {
+  color: black;
+  max-width: 900px;
+  margin: 1em auto 1em auto;
+}
+
+.col > img, .col-lg > img {
+  padding-bottom: 10px;
+}
+
+.map {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 900px;
+  margin: auto !important;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.contactLogo {
+  display: flex;
+}
+
+.buffer {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: black;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    background-color: white;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media (min-width: 1025px) {
+  .hero {
+    background-size: cover;
+    background-position: right top;
+    min-height: 800px;
+ }
+ body {
+   background-color: black;
+ }
+}
+
+@media (max-width: 812px) {
+	.Header {
+    grid-template-areas: "logo burger" "nav nav";    
+	}
+
+	.Nav {
+		grid-template-rows: repeat(5, auto);
+		grid-template-columns: none;
+    grid-row-gap: 5px;
+  }
+  
+  .Nav > a {
+    grid-column: 1;
+  }
+
+	.Burger {
+    display: block;
+    grid-row: 2;
+  }
+
+  .sights, 
+  .menuTitle {
+    min-height: 100px;
+    color: white;
+  }
+
+  .title {
+    max-height: 100px;
+    font-size: 30px;
+    padding: 15px 0 0 0;
+  }
+
+  .title > h1 {
+    margin-bottom: 25px;
+  }
+
+  .sounds > * {
+    display: block;
+    width: 100%;
+    height: 100px;
+  }
+
+  .map {
+    display: block;
+    margin: auto;
+  }
+
+  .sponsor {
+    width: 90vw;
+    max-height: 400px;
+    margin-left: 1em !important;
+    margin-bottom: 1em;
+  }
+  
+}
