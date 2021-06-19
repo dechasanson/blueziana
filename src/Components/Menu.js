@@ -22,9 +22,9 @@ const Menu = () => {
 		document.getElementById(liquorName).style.display = "block";
 	}
 
-	function defaultOpen() {
-		document.getElementById("defaultOpen").click();
-	}
+	// function defaultOpen() {
+	// 	document.getElementById("defaultOpen").click();
+	// }
 
 	return (
 		<>
