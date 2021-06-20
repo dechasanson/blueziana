@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,8 +12,7 @@ const Home = () => {
             Belly up to the bar and sip on a handcrafted 
             specialty cocktail, made with always fresh ingredients (and love).
             </p>
-            <a href="https://www.blueziana.com/Menu" className="button">Browse Our Menu
-            </a>
+            <Link to="/Menu" className="button">Browse Our Menu</Link>
           </article>
         </section>
       </main>
