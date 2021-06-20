@@ -11,7 +11,7 @@ const Home = () => {
             Belly up to the bar and sip on a handcrafted 
             specialty cocktail, made with always fresh ingredients (and love).
             </p>
-            <a href="/Menu" className="button">Browse Our Menu
+            <a href="https://www.blueziana.com/Menu" className="button">Browse Our Menu
             </a>
           </article>
         </section>
